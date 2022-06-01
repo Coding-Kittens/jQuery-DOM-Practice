@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="MoviesApp.css">
+  </head>
+  <body>
+
+<div class="background">
+
+</div>
+
+<form class="userForm">
+<input required type="text" name="userName" placeholder="User Name...">
+<input required type="password" name="password" placeholder="Password...">
+<button type="submit" name="userButton">Add New User</button>
+</form>
+
+
+
+
+<form class="ratingForm hiddenObj">
+  <table>
+    <header>
+      My Movie Ratings
+    </header>
+    <thead>
+      <tr>
+        <th>Movie</th>
+        <th>Rating</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+  <tr id="addNewRateing">
+    <td><input required type="text" name="movName" min="2" placeholder="Harry Potter and the philosiphers stone"></td>
+    <td><input required type="text" name="ratingNum" value="10" ></td>
+    <td><button type="submit" name="button">Add Rating</button></td>
+  </tr>
+    </tbody>
+  </table>
+
+</form>
+
+
+<section class="settings">
+  <h2>Signed in as ...</h2>
+  <button class="settingBtn" type="button" name="signOut">Sign Out</button>
+  <button class="settingBtn" type="button" name="change">Change User</button>
+  <button class="settingBtn" type="button" name="addNew">Add User</button>
+  <div class="extraSettings">
+    <button type="button" name="deleteU">Delete User</button>
+    <button type="button" name="sortR">Sort by Rating</button>
+    <button type="button" name="sortA">Sort Alphabetically</button>
+    <button type="button" name="savelist">Save</button>
+  </div>
+</section>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
+<script src="users.js"></script>
+<script src="MoviesApp.js"></script>
+  </body>
+</html>
